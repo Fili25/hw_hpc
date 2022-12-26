@@ -4,8 +4,8 @@
 
 int main (int argc, char *argv[])
 {
-    const size_t N = 20;
-    const size_t chunk = 7;
+    const size_t N = 100;
+    const size_t chunk = 3;
 
     int i, tid;
     float a[N], b[N], c[N];
