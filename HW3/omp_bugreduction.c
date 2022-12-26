@@ -6,8 +6,8 @@ float dotprod(float * a, float * b, size_t N)
 {
     int i, tid;
     float sum;
-#pragma omp parallel shared(sum)
-#pragma omp for reduction(+:sum)
+    #pragma omp parallel shared(sum)
+    #pragma omp for reduction(+:sum)
     for (i = 0; i < N; ++i)
     {
 	int for_tid = omp_get_thread_num();
