@@ -11,9 +11,9 @@ make1:
 	./task1.out
 	
 make2:
-	gcc -fopenmp omp_bugparfor.c -o task2.out*
+	gcc -fopenmp omp_bugreduction.c -o task2.out*
 	./task2.out
 make3:
-	gcc -fopenmp omp_bugparfor.c -o task3.out*
+	gcc -fopenmp pi_estimate.c -o task3.out*
 	./task3.out
 
